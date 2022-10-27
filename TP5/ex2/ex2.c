@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Code by Noé
+
 #define NBMAX 100
 
 typedef struct 

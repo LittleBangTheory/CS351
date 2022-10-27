@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Code by Somchay
+//Jamais compilé, bugs potentiels
+
 void initListe(int L[], int taille){
   L[0]=taille;
   L[1]=0;
-  for (i = 2; i < taille; i+=2) {
+  for (int i = 2; i < taille; i+=2) {
       L[i]=-1;
   }
 }
@@ -14,7 +17,7 @@ int elementLibre(int L[]){
   int element = 0;
   int taille =L[0];
   while (i < taille) {
-    if (L[i]%2 = 0 && L[i+1]==-1) {
+    if (L[i]%2 == 0 && L[i+1]==-1) {
       element=L[i];
     }
     i++;
@@ -33,7 +36,7 @@ void afficherListe(int L[]){
   }
 }
 void inserer(int x, int *L){
-  libre=elementLibre(L);
+  int libre=elementLibre(L);
   int tmp;
   L[libre]=x;
   int suivant=L[1];
